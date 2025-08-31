@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academics — Sanskar Public School</title>
+  <meta name="description" content="Sanskar Public School: nurturing young minds with knowledge, discipline and excellence." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo">SP</span>
+          <span>Sanskar Public School</span>
+        </a>
+        <button class="btn ghost menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+        <ul class="menu">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About</a></li>
+          <li><a href="academics.html" class="active">Academics</a></li>
+          <li><a href="admission.html" class="">Admission</a></li>
+          <li><a href="gallery.html" class="">Gallery</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href="contact.html">Visit Us</a>
+          <a class="btn primary" href="admission.html">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    
+  
+<section class="section">
+  <div class="container">
+    <h2>Academics</h2>
+    <p class="lead">From Nursery to Class XII with Science, Commerce and Arts streams.</p>
+    <div class="grid three">
+      <div class="card">
+        <h3>Foundational Stage</h3>
+        <p>Nursery to Class II with activity-based learning, phonics and numeracy readiness.</p>
+      </div>
+      <div class="card">
+        <h3>Middle School</h3>
+        <p>Classes III–VIII with strong focus on STEM, languages, art and life skills.</p>
+      </div>
+      <div class="card">
+        <h3>Senior Secondary</h3>
+        <p>Classes IX–XII with streams in Science, Commerce and Humanities, career guidance and Olympiad prep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container grid two">
+    <div class="card">
+      <h3>Facilities</h3>
+      <ul>
+        <li>Science & Computer Labs • Robotics Club</li>
+        <li>Library & Reading Room • Language Lab</li>
+        <li>Sports Ground • Indoor Games • Yoga</li>
+        <li>Transport • Infirmary • CCTV Security</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop" alt="Computer lab" style="border-radius:10px; height:100%; object-fit:cover">
+    </div>
+  </div>
+</section>
+
+  
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>© <span id="year"></span> Sanskar Public School. All rights reserved.</div>
+        <div>Knowledge • Discipline • Excellence</div>
+      </div>
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </footer>
+    
+</body>
+</html>

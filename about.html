@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Sanskar Public School</title>
+  <meta name="description" content="Sanskar Public School: nurturing young minds with knowledge, discipline and excellence." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo">SP</span>
+          <span>Sanskar Public School</span>
+        </a>
+        <button class="btn ghost menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+        <ul class="menu">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="academics.html" class="">Academics</a></li>
+          <li><a href="admission.html" class="">Admission</a></li>
+          <li><a href="gallery.html" class="">Gallery</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href="contact.html">Visit Us</a>
+          <a class="btn primary" href="admission.html">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    
+  
+<section class="section">
+  <div class="container">
+    <h2>About Sanskar Public School</h2>
+    <p class="lead">Founded to deliver holistic education where knowledge meets character.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3>Vision</h3>
+        <p>To empower every learner to become a confident, compassionate and responsible citizen who contributes positively to society.</p>
+      </div>
+      <div class="card">
+        <h3>Mission</h3>
+        <p>To provide a stimulating environment with a blend of rigorous academics, co-curricular activities and value-based education.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container grid two">
+    <div class="card">
+      <h3>Principal’s Message</h3>
+      <p>At Sanskar Public School, we believe education is a partnership between the school, parents and students. Together, we create a culture of curiosity, resilience and respect where every child thrives.</p>
+      <p>— <strong>Dr. A. Sharma</strong>, Principal</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587135941948-670b2a63616b?q=80&w=1400&auto=format&fit=crop" alt="School corridor" style="border-radius:10px; height:100%; object-fit:cover">
+    </div>
+  </div>
+</section>
+
+  
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>© <span id="year"></span> Sanskar Public School. All rights reserved.</div>
+        <div>Knowledge • Discipline • Excellence</div>
+      </div>
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </footer>
+    
+</body>
+</html>

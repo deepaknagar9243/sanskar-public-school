@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home — Sanskar Public School</title>
+  <meta name="description" content="Sanskar Public School: nurturing young minds with knowledge, discipline and excellence." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo">SP</span>
+          <span>Sanskar Public School</span>
+        </a>
+        <button class="btn ghost menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+        <ul class="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html" class="">About</a></li>
+          <li><a href="academics.html" class="">Academics</a></li>
+          <li><a href="admission.html" class="">Admission</a></li>
+          <li><a href="gallery.html" class="">Gallery</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href="contact.html">Visit Us</a>
+          <a class="btn primary" href="admission.html">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    
+  
+<section class="hero">
+  <div class="container wrap">
+    <div>
+      <span class="badge">Welcome to SPS</span>
+      <h1>Shaping futures with knowledge, discipline & values.</h1>
+      <p class="lead">Sanskar Public School provides a safe, inclusive and inspiring environment where every child is encouraged to explore, learn and excel.</p>
+      <div class="actions">
+        <a class="btn primary" href="admission.html">Start Admission</a>
+        <a class="btn ghost" href="about.html">Know More</a>
+      </div>
+    </div>
+    <div class="media">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop" alt="Students learning in a classroom" />
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Why choose Sanskar Public School?</h2>
+    <p class="lead">Balanced academics, co-curricular excellence and character education.</p>
+    <div class="grid three">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1400&auto=format&fit=crop" alt="Library" style="border-radius:10px; margin-bottom:10px; height:180px; object-fit:cover;">
+        <h3>Modern Library</h3>
+        <p>A peaceful, tech-enabled library with a rich collection of books and journals to nurture reading habits.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=1400&auto=format&fit=crop" alt="Sports ground" style="border-radius:10px; margin-bottom:10px; height:180px; object-fit:cover;">
+        <h3>Sports & Fitness</h3>
+        <p>Cricket, football, basketball and indoor games with trained coaches fostering teamwork and health.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092334607-7f37b86c09f1?q=80&w=1400&auto=format&fit=crop" alt="Smart classroom" style="border-radius:10px; margin-bottom:10px; height:180px; object-fit:cover;">
+        <h3>Smart Classrooms</h3>
+        <p>Interactive digital boards and learning tools that make concepts engaging and memorable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>© <span id="year"></span> Sanskar Public School. All rights reserved.</div>
+        <div>Knowledge • Discipline • Excellence</div>
+      </div>
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </footer>
+    
+</body>
+</html>

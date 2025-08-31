@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Sanskar Public School</title>
+  <meta name="description" content="Sanskar Public School: nurturing young minds with knowledge, discipline and excellence." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo">SP</span>
+          <span>Sanskar Public School</span>
+        </a>
+        <button class="btn ghost menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+        <ul class="menu">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About</a></li>
+          <li><a href="academics.html" class="">Academics</a></li>
+          <li><a href="admission.html" class="">Admission</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href="contact.html">Visit Us</a>
+          <a class="btn primary" href="admission.html">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    
+  
+<section class="section">
+  <div class="container">
+    <h2>Photo Gallery</h2>
+    <p class="lead">Glimpses of our campus, activities and achievements.</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1523246191913-786fd338c777?q=80&w=1200&auto=format&fit=crop" alt="Assembly">
+      <img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?q=80&w=1200&auto=format&fit=crop" alt="Sports Day">
+      <img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?q=80&w=1200&auto=format&fit=crop" alt="Science Lab">
+      <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1200&auto=format&fit=crop" alt="Library">
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop" alt="Cultural Event">
+      <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop" alt="Art Class">
+    </div>
+  </div>
+</section>
+
+  
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>© <span id="year"></span> Sanskar Public School. All rights reserved.</div>
+        <div>Knowledge • Discipline • Excellence</div>
+      </div>
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </footer>
+    
+</body>
+</html>

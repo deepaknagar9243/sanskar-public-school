@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admission — Sanskar Public School</title>
+  <meta name="description" content="Sanskar Public School: nurturing young minds with knowledge, discipline and excellence." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="logo">SP</span>
+          <span>Sanskar Public School</span>
+        </a>
+        <button class="btn ghost menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+        <ul class="menu">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About</a></li>
+          <li><a href="academics.html" class="">Academics</a></li>
+          <li><a href="admission.html" class="active">Admission</a></li>
+          <li><a href="gallery.html" class="">Gallery</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href="contact.html">Visit Us</a>
+          <a class="btn primary" href="admission.html">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    
+  
+<section class="section">
+  <div class="container">
+    <h2>Admission</h2>
+    <p class="lead">Admissions open for the academic year. Seats are limited.</p>
+    <div class="grid two">
+      <div class="card form-card">
+        <h3>Admission Form</h3>
+        <form onsubmit="event.preventDefault(); alert('Application submitted (demo).');">
+          <label>Student Name</label>
+          <input type="text" placeholder="Full name" required>
+          <label>Date of Birth</label>
+          <input type="date" required>
+          <label>Gender</label>
+          <select required>
+            <option value="">Select</option><option>Male</option><option>Female</option><option>Other</option>
+          </select>
+          <label>Class Applying For</label>
+          <select required>
+            <option value="">Select Class</option>
+            <option>Nursery</option><option>KG</option>
+            <option>1st</option><option>2nd</option><option>3rd</option><option>4th</option><option>5th</option>
+            <option>6th</option><option>7th</option><option>8th</option><option>9th</option><option>10th</option>
+            <option>11th</option><option>12th</option>
+          </select>
+          <label>Parent/Guardian Name</label>
+          <input type="text" placeholder="Parent name" required>
+          <label>Email</label>
+          <input type="email" placeholder="Email" required>
+          <label>Phone</label>
+          <input type="tel" placeholder="Phone number" required>
+          <label>Address</label>
+          <textarea rows="4" placeholder="Full address" required></textarea>
+          <button class="btn primary" type="submit">Submit Application</button>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Eligibility & Documents</h3>
+        <ul>
+          <li>Age proof (Birth Certificate)</li>
+          <li>Previous class report card (if applicable)</li>
+          <li>Transfer Certificate for Class II and above</li>
+          <li>Two passport-size photographs</li>
+          <li>Aadhaar copy (student & parent)</li>
+        </ul>
+        <h3 style="margin-top:16px">Important Dates</h3>
+        <ul>
+          <li>Application window: Open now</li>
+          <li>Interaction/Assessment: Will be communicated via email</li>
+          <li>Session begins: April</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>© <span id="year"></span> Sanskar Public School. All rights reserved.</div>
+        <div>Knowledge • Discipline • Excellence</div>
+      </div>
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </footer>
+    
+</body>
+</html>
